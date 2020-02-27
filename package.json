@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/recraftrelic/recraft-cli/issues"
   },
-  "homepage": "https://github.com/recraftrelic/recraft-cli#readme"
+  "homepage": "https://github.com/recraftrelic/recraft-cli#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "minimist": "^1.2.0",
+    "simple-git": "^1.131.0"
+  }
 }
