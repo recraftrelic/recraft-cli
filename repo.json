@@ -1,0 +1,6 @@
+{
+  "react-native-chat-app": {
+    "ssh": "git@github.com:recraftrelic/react-native-chat-app-boilerplate.git",
+    "https": "https://github.com/recraftrelic/react-native-chat-app-boilerplate.git"
+  }
+}

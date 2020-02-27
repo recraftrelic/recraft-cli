@@ -9,7 +9,7 @@ Commands
 ```
 git checkout -b feature/branch-name
 ```
-* recraft-cli clone app-name
+* recraft-cli clone app-name -p `[ssh|https]`
 ```
 git clone app-repo
 ```
