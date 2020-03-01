@@ -1,4 +1,9 @@
-const { Command } = require('./types')
+import { Command } from "./types"
+import simpleGit from "simple-git/promise";
+import chalk from "chalk";
+import repoList from "../repo.json";
+
+const git = simpleGit(__dirname);
 
 const cloneCommand: Command = {
   name: "clone",
@@ -11,7 +16,7 @@ const cloneCommand: Command = {
         return console.log(chalk.red(`${method} schema not found for ${appName}`))
       }
       console.log(chalk.green(`cloning ${appName} from ${repoUrl}`))
-      simpleGit.outputHandler((_, stdout, stderr) => {
+      git.outputHandler((_, stdout, stderr) => {
         stdout.pipe(process.stdout);
         stderr.pipe(process.stderr);
       })
@@ -24,4 +29,4 @@ const cloneCommand: Command = {
   }
 }
 
-module.exports = cloneCommand
+export default cloneCommand;

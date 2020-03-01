@@ -1,5 +1,6 @@
-const commands: Command[] = [
-  require("./clone")
-]
+import cloneCommand from "./clone";
+import { Command } from "./types";
 
-module.exports = commands;
+const commands: Command[] = [cloneCommand]
+
+export default commands;
